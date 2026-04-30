@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>支持 · Support — MomentSnap</title>
+  <style>
+    :root{--primary:#6d28d9;--primary-light:#ede9fe;--fg:#1a1a1a;--muted:#6b7280;--border:#e5e7eb;--bg:#fff;--card:#f9fafb}
+    @media(prefers-color-scheme:dark){:root{--primary:#a78bfa;--primary-light:#2e1065;--fg:#f3f4f6;--muted:#9ca3af;--border:#374151;--bg:#111827;--card:#1f2937}}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Noto Sans KR",sans-serif;color:var(--fg);background:var(--bg);line-height:1.7}
+    a{color:var(--primary)}
+    nav{display:flex;align-items:center;justify-content:space-between;padding:14px 24px;border-bottom:1px solid var(--border)}
+    .nav-logo{display:flex;align-items:center;gap:10px;font-weight:700;text-decoration:none;color:var(--fg)}
+    .nav-logo img{width:28px;height:28px;border-radius:6px}
+    .nav-right{display:flex;align-items:center;gap:14px}
+    .nav-back{font-size:.85rem;color:var(--muted);text-decoration:none}
+    .nav-back:hover{color:var(--fg)}
+    .lang-bar{display:flex;gap:4px}
+    .lang-bar button{padding:3px 10px;border-radius:99px;border:1px solid var(--border);background:none;color:var(--muted);cursor:pointer;font-size:.78rem;transition:all .12s}
+    .lang-bar button.active{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+    .wrap{max-width:760px;margin:0 auto;padding:52px 24px 80px}
+    h1{font-size:1.7rem;font-weight:700;margin-bottom:5px}
+    .subtitle{color:var(--muted);margin-bottom:44px;font-size:.9rem}
+    .faq-section{margin-bottom:44px}
+    .faq-label{font-size:.78rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--primary);margin-bottom:14px;padding-bottom:7px;border-bottom:1px solid var(--border)}
+    .faq-item{margin-bottom:22px}
+    .faq-item h3{font-size:.93rem;font-weight:600;margin-bottom:6px}
+    .faq-item p,.faq-item ul{font-size:.875rem;color:var(--muted)}
+    .faq-item ul{padding-left:18px}
+    .faq-item li{margin-bottom:4px}
+    .contact-card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:26px;text-align:center}
+    .contact-card p{color:var(--muted);font-size:.88rem;margin-bottom:14px}
+    .contact-card a{display:inline-block;padding:9px 22px;border-radius:10px;background:var(--primary);color:#fff;font-weight:600;font-size:.88rem;text-decoration:none}
+    .contact-card a:hover{opacity:.87}
+    footer{border-top:1px solid var(--border);padding:22px;text-align:center;font-size:.8rem;color:var(--muted)}
+    footer a{color:var(--muted)}
+    [data-t]{display:none}[data-t].on{display:revert}span[data-t].on{display:inline}
+  </style>
+</head>
+<body>
+<nav>
+  <a class="nav-logo" href="index.html">
+    <img src="icon.png" alt="MomentSnap" />
+    <span>拾光 · MomentSnap</span>
+  </a>
+  <div class="nav-right">
+    <a class="nav-back" href="index.html">
+      <span data-t="zh" class="on">← 首页</span><span data-t="zh-TW">← 首頁</span><span data-t="en">← Home</span><span data-t="ja">← ホーム</span><span data-t="ko">← 홈</span>
+    </a>
+    <div class="lang-bar" id="langBar">
+      <button onclick="setLang('zh')" data-lang="zh">简体</button>
+      <button onclick="setLang('zh-TW')" data-lang="zh-TW">繁體</button>
+      <button onclick="setLang('en')" data-lang="en">EN</button>
+      <button onclick="setLang('ja')" data-lang="ja">日本語</button>
+      <button onclick="setLang('ko')" data-lang="ko">한국어</button>
+    </div>
+  </div>
+</nav>
+
+<div class="wrap">
+  <h1>
+    <span data-t="zh" class="on">使用支持</span><span data-t="zh-TW">使用支援</span><span data-t="en">Support</span><span data-t="ja">サポート</span><span data-t="ko">지원</span>
+  </h1>
+  <p class="subtitle">
+    <span data-t="zh" class="on">常见问题与解答</span><span data-t="zh-TW">常見問題與解答</span><span data-t="en">Frequently Asked Questions</span><span data-t="ja">よくある質問</span><span data-t="ko">자주 묻는 질문</span>
+  </p>
+
+  <!-- ── 基本使用 ── -->
+  <div class="faq-section">
+    <div class="faq-label">
+      <span data-t="zh" class="on">基本使用</span><span data-t="zh-TW">基本使用</span><span data-t="en">Basic Usage</span><span data-t="ja">基本的な使い方</span><span data-t="ko">기본 사용법</span>
+    </div>
+
+    <div class="faq-item">
+      <h3><span data-t="zh" class="on">支持哪些视频格式？</span><span data-t="zh-TW">支援哪些影片格式？</span><span data-t="en">What video formats are supported?</span><span data-t="ja">対応している動画フォーマットは？</span><span data-t="ko">지원하는 영상 형식은?</span></h3>
+      <p><span data-t="zh" class="on">支持 MP4、MOV、WebM、M4V 等主流格式（取决于 macOS 系统解码能力）。建议使用 H.264 / H.265 编码的 MP4 获得最佳兼容性。</span><span data-t="zh-TW">支援 MP4、MOV、WebM、M4V 等主流格式（取決於 macOS 系統解碼能力）。建議使用 H.264 / H.265 編碼的 MP4 以獲得最佳相容性。</span><span data-t="en">MP4, MOV, WebM, M4V, and other common formats are supported (subject to macOS decoder support). H.264 / H.265 encoded MP4 files are recommended for best compatibility.</span><span data-t="ja">MP4、MOV、WebM、M4Vなど主流フォーマットに対応しています（macOSのデコード能力に依存）。最適な互換性のためH.264/H.265エンコードのMP4を推奨します。</span><span data-t="ko">MP4, MOV, WebM, M4V 등 주요 형식을 지원합니다(macOS 디코더 지원에 따라 다름). 최적 호환성을 위해 H.264/H.265로 인코딩된 MP4를 권장합니다.</span></p>
+    </div>
+
+    <div class="faq-item">
+      <h3><span data-t="zh" class="on">如何加载视频？</span><span data-t="zh-TW">如何載入影片？</span><span data-t="en">How do I load a video?</span><span data-t="ja">動画を読み込む方法は？</span><span data-t="ko">영상을 불러오는 방법은?</span></h3>
+      <ul>
+        <li><span data-t="zh" class="on"><strong>本地文件</strong>：将视频拖入应用窗口，或点击上传区域选择文件</span><span data-t="zh-TW"><strong>本地檔案</strong>：將影片拖入應用視窗，或點擊上傳區域選擇檔案</span><span data-t="en"><strong>Local file</strong>: Drag a video into the app window, or click the upload area to pick a file</span><span data-t="ja"><strong>ローカルファイル</strong>：アプリウィンドウに動画をドラッグ、またはアップロードエリアをクリックして選択</span><span data-t="ko"><strong>로컬 파일</strong>: 앱 창에 영상을 드래그하거나, 업로드 영역을 클릭해 파일 선택</span></li>
+        <li><span data-t="zh" class="on"><strong>在线链接</strong>：切换到「在线视频」标签，粘贴直链后点击加载</span><span data-t="zh-TW"><strong>線上連結</strong>：切換到「線上影片」標籤，貼上直鏈後點擊載入</span><span data-t="en"><strong>Online URL</strong>: Switch to the "Online Video" tab, paste a direct link, and tap Load</span><span data-t="ja"><strong>オンラインURL</strong>：「オンライン動画」タブに切り替えて直リンクを貼り付け、読み込みをタップ</span><span data-t="ko"><strong>온라인 URL</strong>: "온라인 동영상" 탭으로 전환해 직접 링크를 붙여넣고 불러오기 탭</span></li>
+      </ul>
+    </div>
+
+    <div class="faq-item">
+      <h3><span data-t="zh" class="on">如何批量选择帧？</span><span data-t="zh-TW">如何批次選取幀？</span><span data-t="en">How do I select multiple frames?</span><span data-t="ja">複数のフレームを選択する方法は？</span><span data-t="ko">여러 프레임을 선택하는 방법은?</span></h3>
+      <ul>
+        <li><span data-t="zh" class="on">点击选中 / 再次点击取消</span><span data-t="zh-TW">點擊選取 / 再次點擊取消</span><span data-t="en">Click to select / click again to deselect</span><span data-t="ja">クリックで選択 / 再クリックで解除</span><span data-t="ko">클릭으로 선택 / 다시 클릭으로 해제</span></li>
+        <li><span data-t="zh" class="on">Shift + 点击：连续选取范围</span><span data-t="zh-TW">Shift + 點擊：連續選取範圍</span><span data-t="en">Shift + click: select a contiguous range</span><span data-t="ja">Shift+クリック：連続範囲選択</span><span data-t="ko">Shift + 클릭: 연속 범위 선택</span></li>
+        <li><span data-t="zh" class="on">拖拽框选：在帧网格空白处拖动鼠标</span><span data-t="zh-TW">拖曳框選：在幀網格空白處拖曳滑鼠</span><span data-t="en">Drag to box-select in the frame grid</span><span data-t="ja">フレームグリッドの空白部分でドラッグして範囲選択</span><span data-t="ko">프레임 그리드 빈 공간에서 드래그해 박스 선택</span></li>
+        <li><span data-t="zh" class="on">工具栏：全选 / 清空 / 均匀选取</span><span data-t="zh-TW">工具列：全選 / 清空 / 均勻選取</span><span data-t="en">Toolbar: Select All / Clear / Uniform Pick</span><span data-t="ja">ツールバー：全選択 / クリア / 均等選択</span><span data-t="ko">도구 모음: 전체 선택 / 지우기 / 균등 선택</span></li>
+      </ul>
+    </div>
+
+    <div class="faq-item">
+      <h3><span data-t="zh" class="on">导出图片的分辨率是多少？</span><span data-t="zh-TW">匯出圖片的解析度是多少？</span><span data-t="en">What resolution are exported images?</span><span data-t="ja">書き出し画像の解像度は？</span><span data-t="ko">내보내기 이미지 해상도는?</span></h3>
+      <p><span data-t="zh" class="on">基于原始视频帧尺寸按布局拼合计算。例如：1920×1080 视频，3×3 网格导出约为 5760×3240（不含间距）。</span><span data-t="zh-TW">基於原始影片幀尺寸按版面拼合計算。例如：1920×1080 影片，3×3 網格匯出約為 5760×3240（不含間距）。</span><span data-t="en">Based on original frame dimensions composed by layout. E.g. a 1920×1080 video in a 3×3 grid exports at roughly 5760×3240 (excluding gaps).</span><span data-t="ja">元のフレームサイズをレイアウトに応じて合成して計算されます。例：1920×1080の動画を3×3グリッドで書き出すと約5760×3240（間隔除く）。</span><span data-t="ko">원본 프레임 크기를 레이아웃에 따라 합산하여 계산합니다. 예: 1920×1080 영상을 3×3 그리드로 내보내면 약 5760×3240 (간격 제외).</span></p>
+    </div>
+  </div>
+
+  <!-- ── 购买 ── -->
+  <div class="faq-section">
+    <div class="faq-label">
+      <span data-t="zh" class="on">完整版与购买</span><span data-t="zh-TW">完整版與購買</span><span data-t="en">Pro &amp; Purchases</span><span data-t="ja">Pro版・購入</span><span data-t="ko">Pro 및 구매</span>
+    </div>
+
+    <div class="faq-item">
+      <h3><span data-t="zh" class="on">免费版和完整版的区别？</span><span data-t="zh-TW">免費版和完整版的差異？</span><span data-t="en">What's the difference between Free and Pro?</span><span data-t="ja">無料版とPro版の違いは？</span><span data-t="ko">무료 버전과 Pro의 차이는?</span></h3>
+      <ul>
+        <li><span data-t="zh" class="on">免费版：每次最多提取 10 帧，导出包含水印</span><span data-t="zh-TW">免費版：每次最多擷取 10 幀，匯出包含浮水印</span><span data-t="en">Free: up to 10 frames per extraction, exports include watermark</span><span data-t="ja">無料版：1回の抽出で最大10枚、書き出しに透かし入り</span><span data-t="ko">무료: 추출당 최대 10프레임, 내보내기에 워터마크 포함</span></li>
+        <li><span data-t="zh" class="on">完整版：无限帧提取、导出无水印、全部布局</span><span data-t="zh-TW">完整版：無限幀擷取、匯出無浮水印、全部版面</span><span data-t="en">Pro: unlimited frames, no watermark, all layouts</span><span data-t="ja">Pro版：無制限フレーム・透かしなし・全レイアウト</span><span data-t="ko">Pro: 무제한 프레임, 워터마크 없음, 모든 레이아웃</span></li>
+      </ul>
+    </div>
+
+    <div class="faq-item">
+      <h3><span data-t="zh" class="on">换电脑后如何恢复购买？</span><span data-t="zh-TW">換電腦後如何恢復購買？</span><span data-t="en">How do I restore my purchase on a new Mac?</span><span data-t="ja">新しいMacで購入を復元する方法は？</span><span data-t="ko">새 Mac에서 구매를 복원하는 방법은?</span></h3>
+      <p><span data-t="zh" class="on">下载应用后点击右上角徽章，选择「恢复购买」，使用同一 Apple ID 登录即可自动恢复，无需重新付费。</span><span data-t="zh-TW">下載應用後點擊右上角徽章，選擇「恢復購買」，使用相同 Apple ID 登入即可自動恢復，無需重新付費。</span><span data-t="en">After downloading the app, tap the badge in the top-right corner, choose "Restore Purchase", and sign in with the same Apple ID. Your Pro access will be restored automatically at no charge.</span><span data-t="ja">アプリをダウンロード後、右上のバッジをタップして「購入を復元」を選択し、同じApple IDでサインインすると自動的に復元されます。追加料金はかかりません。</span><span data-t="ko">앱 다운로드 후 오른쪽 상단 배지를 탭하고 "구매 복원"을 선택한 후 동일한 Apple ID로 로그인하면 자동으로 복원됩니다. 추가 요금 없음.</span></p>
+    </div>
+
+    <div class="faq-item">
+      <h3><span data-t="zh" class="on">支持家庭共享吗？</span><span data-t="zh-TW">支援家庭共享嗎？</span><span data-t="en">Is Family Sharing supported?</span><span data-t="ja">ファミリー共有は対応していますか？</span><span data-t="ko">가족 공유가 지원되나요?</span></h3>
+      <p><span data-t="zh" class="on">支持。通过 App Store 购买后，家庭共享成员可直接使用完整版，无需额外付费。</span><span data-t="zh-TW">支援。透過 App Store 購買後，家庭共享成員可直接使用完整版，無需額外付費。</span><span data-t="en">Yes. After purchasing through the App Store, family members in your Family Sharing group can use Pro features at no additional cost.</span><span data-t="ja">はい。App Storeで購入後、ファミリー共有メンバーは追加料金なしでPro機能をご利用いただけます。</span><span data-t="ko">예. App Store에서 구매 후 가족 공유 그룹의 구성원은 추가 비용 없이 Pro 기능을 사용할 수 있습니다.</span></p>
+    </div>
+
+    <div class="faq-item">
+      <h3><span data-t="zh" class="on">如何申请退款？</span><span data-t="zh-TW">如何申請退款？</span><span data-t="en">How do I request a refund?</span><span data-t="ja">返金を申請するには？</span><span data-t="ko">환불을 요청하는 방법은?</span></h3>
+      <p><span data-t="zh" class="on">退款由 Apple 处理。请前往 <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a> 登录 Apple ID 后提交申请。</span><span data-t="zh-TW">退款由 Apple 處理。請前往 <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a> 登入 Apple ID 後提交申請。</span><span data-t="en">Refunds are handled by Apple. Visit <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a>, sign in with your Apple ID, and submit a refund request.</span><span data-t="ja">返金はAppleが処理します。<a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a>にApple IDでサインインして申請してください。</span><span data-t="ko">환불은 Apple이 처리합니다. <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a>에 Apple ID로 로그인 후 요청하세요.</span></p>
+    </div>
+  </div>
+
+  <!-- ── 隐私 ── -->
+  <div class="faq-section">
+    <div class="faq-label">
+      <span data-t="zh" class="on">隐私与安全</span><span data-t="zh-TW">隱私與安全</span><span data-t="en">Privacy &amp; Security</span><span data-t="ja">プライバシーとセキュリティ</span><span data-t="ko">개인정보 및 보안</span>
+    </div>
+    <div class="faq-item">
+      <h3><span data-t="zh" class="on">视频会上传到服务器吗？</span><span data-t="zh-TW">影片會上傳到伺服器嗎？</span><span data-t="en">Are my videos uploaded to any server?</span><span data-t="ja">動画はサーバーにアップロードされますか？</span><span data-t="ko">영상이 서버에 업로드되나요?</span></h3>
+      <p><span data-t="zh" class="on">不会。所有处理均在本地完成，视频内容永不离开你的设备。详见 <a href="privacy.html">隐私政策</a>。</span><span data-t="zh-TW">不會。所有處理均在本地完成，影片內容永不離開你的裝置。詳見 <a href="privacy.html">隱私政策</a>。</span><span data-t="en">No. All processing is done locally and video content never leaves your device. See the <a href="privacy.html">Privacy Policy</a> for details.</span><span data-t="ja">いいえ。すべての処理はローカルで行われ、動画の内容がデバイスの外に出ることは一切ありません。詳しくは<a href="privacy.html">プライバシーポリシー</a>をご覧ください。</span><span data-t="ko">아니요. 모든 처리는 로컬에서 이루어지며 영상 내용은 기기를 벗어나지 않습니다. 자세한 내용은 <a href="privacy.html">개인정보 처리방침</a>을 참조하세요.</span></p>
+    </div>
+  </div>
+
+  <!-- 联系 -->
+  <div class="contact-card">
+    <p>
+      <span data-t="zh" class="on">没找到答案？欢迎通过 GitHub 提交反馈，通常 1-3 个工作日内回复。</span>
+      <span data-t="zh-TW">沒找到答案？歡迎透過 GitHub 提交意見，通常 1-3 個工作日內回覆。</span>
+      <span data-t="en">Didn't find your answer? Submit feedback on GitHub — we usually respond within 1-3 business days.</span>
+      <span data-t="ja">回答が見つかりませんでしたか？GitHubでフィードバックをお送りください。通常1〜3営業日以内に返信します。</span>
+      <span data-t="ko">답을 찾지 못하셨나요? GitHub에서 피드백을 제출해 주세요 — 보통 1-3 영업일 내에 답변드립니다.</span>
+    </p>
+    <a href="https://github.com/你的用户名/momentsnap-site/issues/new" target="_blank" rel="noopener">
+      <span data-t="zh" class="on">提交问题 / 功能建议</span>
+      <span data-t="zh-TW">提交問題 / 功能建議</span>
+      <span data-t="en">Submit Issue / Feature Request</span>
+      <span data-t="ja">問題・機能リクエストを送る</span>
+      <span data-t="ko">문제 / 기능 요청 제출</span>
+    </a>
+  </div>
+</div>
+
+<footer>
+  <a href="index.html"><span data-t="zh" class="on">首页</span><span data-t="zh-TW">首頁</span><span data-t="en">Home</span><span data-t="ja">ホーム</span><span data-t="ko">홈</span></a> ·
+  <a href="privacy.html"><span data-t="zh" class="on">隐私政策</span><span data-t="zh-TW">隱私政策</span><span data-t="en">Privacy</span><span data-t="ja">プライバシー</span><span data-t="ko">개인정보</span></a> ·
+  Copyright © 2026 MomentSnap
+</footer>
+
+<script>
+  const LANGS=['zh','zh-TW','en','ja','ko']
+  function setLang(lang){
+    document.documentElement.lang={'zh':'zh-CN','zh-TW':'zh-TW','en':'en','ja':'ja','ko':'ko'}[lang]||lang
+    document.querySelectorAll('[data-t]').forEach(el=>el.classList.toggle('on',el.dataset.t===lang))
+    document.querySelectorAll('#langBar button').forEach(btn=>btn.classList.toggle('active',btn.dataset.lang===lang))
+    try{localStorage.setItem('ms_lang',lang)}catch(e){}
+  }
+  function detectLang(){
+    try{const s=localStorage.getItem('ms_lang');if(s&&LANGS.includes(s))return s}catch(e){}
+    const nav=(navigator.languages||[navigator.language||'en']).map(l=>l.toLowerCase())
+    if(nav.some(l=>l.startsWith('zh-tw')||l.startsWith('zh-hant')))return 'zh-TW'
+    if(nav.some(l=>l.startsWith('zh')))return 'zh'
+    if(nav.some(l=>l.startsWith('ja')))return 'ja'
+    if(nav.some(l=>l.startsWith('ko')))return 'ko'
+    return 'en'
+  }
+  setLang(detectLang())
+</script>
+</body>
+</html>
