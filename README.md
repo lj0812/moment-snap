@@ -1,6 +1,6 @@
 # 拾光 · MomentSnap — 官网 & 文档
 
-本仓库托管 [拾光 MomentSnap](https://apps.apple.com/app/6764757680) 的官方网站，通过 GitHub Pages 发布。
+本仓库托管 [拾光 MomentSnap](https://apps.apple.com/cn/app/%E6%8B%BE%E5%85%89-momentsnap/id6764757680?mt=12) 的官方网站，通过 GitHub Pages 发布。
 
 ## 页面
 
@@ -25,4 +25,4 @@
 - 导出全分辨率 PNG / JPG
 - 所有处理在本地完成，视频不离开设备
 
-[在 Mac App Store 下载 →](https://apps.apple.com/app/6764757680)
+[在 Mac App Store 下载 →](https://apps.apple.com/cn/app/%E6%8B%BE%E5%85%89-momentsnap/id6764757680?mt=12)
